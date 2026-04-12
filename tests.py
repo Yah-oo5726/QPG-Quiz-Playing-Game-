@@ -36,7 +36,9 @@ class TestQuestions(TestCase):
         self.assertTrue(question.ask(test_answer=" PaRiS "))
 
     def test_quiztaker_wrong_answer(self):
+        # THIS WILL FAIL IF THE QUESTIONS LIST IN questions.py IS CHANGED. EXPECT FAILURE IF CHANGED.
         self.assertEqual(ask_question(test_question_index=0, test_answer="A"), 0)
 
     def test_quiztaker_right_answer(self):
+        # THIS WILL FAIL IF THE QUESTIONS LIST IN questions.py IS CHANGED. EXPECT FAILURE IF CHANGED.
         self.assertEqual(ask_question(test_question_index=0, test_answer="B"), 1)
