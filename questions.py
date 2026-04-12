@@ -15,6 +15,7 @@ class Question:
 
 class MultipleChoiceQuestion(Question):
     def __init__(self, text, answer, options):
+        #note: answer should be the value of the correct option, not the key
         super().__init__(text, answer, QuestionType.MULTIPLE_CHOICE)
         self.options = options
     
@@ -27,6 +28,8 @@ class MultipleChoiceQuestion(Question):
             answer = input("Your answer: ")
         else:
             answer = test_answer
+        if answer.strip().upper() not in self.options:
+            return False
         answer = self.options[answer.strip().upper()]
         return answer == self.answer
 
