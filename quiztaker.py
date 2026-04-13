@@ -8,7 +8,7 @@ def ask_question(test_question_index = None, test_answer = None):
     if result:
         if test_answer is None:
             print("Correct!")
-        return 1
+        return True
     if test_answer is None:
         print("Incorrect!")
-    return 0
+    return False
