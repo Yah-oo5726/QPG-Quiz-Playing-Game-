@@ -47,8 +47,3 @@ class OpenEndedQuestion(Question):
             answer = test_answer
         answer = answer.strip().lower()
         return answer == self.answer.strip().lower()
-
-questions = [
-    MultipleChoiceQuestion("What's the square root of 16?", 4, {"A": 2, "B": 4, "C": 8, "D": 64}),
-    OpenEndedQuestion("What is the capital of France?", "Paris"),
-]

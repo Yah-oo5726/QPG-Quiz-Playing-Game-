@@ -1,4 +1,5 @@
-from questions import questions, MultipleChoiceQuestion, OpenEndedQuestion
+from questions import MultipleChoiceQuestion, OpenEndedQuestion
+from question_list import questions
 from random import randint
 
 def ask_question(test_question_index = None, test_answer = None):
