@@ -27,4 +27,7 @@ questions = [
 ]
 
 
-Your question_list.py should also follow this template
+Your question_list.py should also follow this template.
+
+
+To change starting stats, change the Statistics initialized in main.py
