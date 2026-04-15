@@ -31,7 +31,7 @@ def shop(stats: Statistics):
         stats.attack = stats.damage + stats.damage_modifier
         print(f"You bought a Damage Potion and increased your damage by {products[choice - 1].effect_amount}. Your current attack is now {stats.attack}.")
     elif products[choice - 1].type == "Weapon":
-        stats.damage_modifier += products[choice - 1].effect_amount
+        stats.damage_modifier = products[choice - 1].effect_amount
         stats.attack = stats.damage + stats.damage_modifier
         print(f"You bought a Weapon that increases your damage by {products[choice - 1].effect_amount}. Your current attack is now {stats.attack}.")
     return
